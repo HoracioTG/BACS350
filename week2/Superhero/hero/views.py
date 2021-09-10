@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from django.views.generic import TemplateView
 
-# Create your views here.
+class GreenArrowView(TemplateView):
+    template_name = 'greenarrow.html'
+
+    
+
+class TheFlashView(TemplateView):
+    template_name = "theflash.html"
