@@ -1,17 +1,17 @@
 from django.views.generic import TemplateView
 
-class AboutView(TemplateView):
-    template_name = 'about.html'
+class IndexView(TemplateView):
+    template_name = 'index.html'
     
     def get_context_data(self, **kwargs):
         return {
-            'title': 'My about page', 
+            'title': 'My Index page', 
             'body': 'AyoooooO',
         }
 
 class HomeView(TemplateView):
     template_name = "home.html"
 
-class IndexView(TemplateView):
-    template_name = "index.html"
+class AboutView(TemplateView):
+    template_name = "about.html"
 
