@@ -6,7 +6,8 @@ class IndexView(TemplateView):
     def get_context_data(self, **kwargs):
         return {
             'title': 'My index page', 
-            'body': 'AyoooooO',
+            'body': <a href="/http://127.0.0.1:8000/greenarrow">Green Arrow</a> <a href="/http://127.0.0.1:8000/theflash">The Flash</a> 
+            ,
         }
 
 class TheFlashView(TemplateView):
