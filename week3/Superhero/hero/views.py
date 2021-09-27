@@ -7,6 +7,7 @@ class IndexView(TemplateView):
         return {
             'title': 'My index page', 
             'body': 'Ayoooo',
+            
         }
 
 class TheFlashView(TemplateView):
@@ -15,6 +16,7 @@ class TheFlashView(TemplateView):
         return {
             'title': 'The Flash', 
             'body': 'Create content for The Flash',
+            'image': '/static/images/theflash.jpg',
         }
 
 class GreenArrowView(TemplateView):
@@ -23,4 +25,5 @@ class GreenArrowView(TemplateView):
         return {
             'title': 'Green Arrow', 
             'body': 'Create content for Green Arrow',
+            'image': '/static/images/greenarrow.jpg',
         }
