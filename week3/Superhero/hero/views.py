@@ -11,7 +11,7 @@ class IndexView(TemplateView):
         }
 
 class TheFlashView(TemplateView):
-    template_name = "theflash.html"
+    template_name = "hero.html"
     def get_context_data(self, **kwargs):
         return {
             'title': 'The Flash', 
@@ -20,7 +20,7 @@ class TheFlashView(TemplateView):
         }
 
 class GreenArrowView(TemplateView):
-    template_name = "greenarrow.html"
+    template_name = "hero.html"
     def get_context_data(self, **kwargs):
         return {
             'title': 'Green Arrow', 
