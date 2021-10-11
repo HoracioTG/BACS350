@@ -16,12 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from hero.views import HeroView, HeroDetailView
+from hero.views import HeroListView, HeroDetailView, IndexView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', HeroView.as_view()),
-    path('hero/', HeroView.as_view()),
+    path('', IndexView.as_view()),
+    path('hero/', HeroListView.as_view()),
     path('hero/<int:pk>', HeroDetailView.as_view()),
 
 ]
