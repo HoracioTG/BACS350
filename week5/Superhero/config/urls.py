@@ -20,6 +20,7 @@ from hero.views import HeroView, HeroDetailView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', HeroView.as_view()),
-    path('<int:pk>', HeroDetailView.as_view()),
+    path('hero/', HeroView.as_view()),
+    path('hero/<int:pk>', HeroDetailView.as_view()),
+
 ]
