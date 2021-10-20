@@ -1,0 +1,12 @@
+{% extends 'hero_theme.html' %}
+
+{% block content %}
+
+<h1>Hero Details</h1>
+<ul>
+    <li>Hero: {{ hero.name }}</li>
+    <li>Description: {{ hero.description }}</li>
+</ul>
+<p><img src="{{ hero.image }}" alt="{{ hero.name }}"></p>
+
+{% endblock content %}

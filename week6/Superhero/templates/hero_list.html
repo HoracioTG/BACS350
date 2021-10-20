@@ -1,0 +1,18 @@
+{% extends 'hero_theme.html' %}
+
+{% block content %}
+
+<h1>
+    <h1>List of My Superheroes</h1>
+</h1>
+
+<ul>
+    {% for hero in object_list %}
+    <li>{{ hero.name }} - {{ hero.description }} -
+        <a href="{{ hero.pk }}">{{ hero.name }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+
+{% endblock content %}
