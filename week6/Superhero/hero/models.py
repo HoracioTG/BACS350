@@ -1,6 +1,7 @@
 from django.db import models
 from django.urls.base import reverse_lazy
 
+
 class Hero(models.Model):
     name = models.CharField(max_length=200)
     description = models.TextField()
@@ -11,4 +12,3 @@ class Hero(models.Model):
 
     def get_absolute_url(self):
         return reverse_lazy('hero_list')
-# Create your models here.
