@@ -6,7 +6,13 @@
 <ul>
     <li>Hero: {{ hero.name }}</li>
     <li>Description: {{ hero.description }}</li>
+    <li>Identity: {{ hero.identity }}</li>
+    <li>Strength: {{ hero.strength }}</li>
+    <li>Weakness: {{ hero.weakness }}</li>
+
 </ul>
 <p><img src="{{ hero.image }}" alt="{{ hero.name }}"></p>
+<p><a href="{{ hero.pk }}/"> edit</a></p>
+<a href="{{ hero.pk }}/delete">delete hero</a>
 
 {% endblock content %}
