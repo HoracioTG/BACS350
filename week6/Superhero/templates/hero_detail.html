@@ -12,7 +12,9 @@
 
 </ul>
 <p><img src="{{ hero.image }}" alt="{{ hero.name }}"></p>
-<p><a href="{{ hero.pk }}/"> edit</a></p>
-<a href="{{ hero.pk }}/delete">delete hero</a>
+<p>
+    <a href="{{ hero.pk }}/" class="btn btn-success m-5"> Edit</a>
+    <a href="{{ hero.pk }}/delete" class="btn btn-success m-5">Delete Hero</a>
+</p>
 
 {% endblock content %}
