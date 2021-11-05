@@ -1,0 +1,23 @@
+{% extends 'hero_theme.html' %}
+
+{% block content %}
+
+
+<h1>List of My Superheroes</h1>
+
+
+<ul>
+    {% for hero in object_list %}
+    <li>{{ hero.name }} - {{ hero.description }} -
+        <a href="{{ hero.pk }}">{{ hero.name }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<p>
+    <a href="/admin/" class="btn btn-success m-5">Modify Database with Admin Views</a>
+    <a href="/hero/add" class="btn btn-success m-5">Add New Hero</a>
+</p>
+
+
+{% endblock content %}
