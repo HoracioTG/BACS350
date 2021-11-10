@@ -5,19 +5,19 @@
 
 <h1>List of My Superheroes</h1>
 
+<div id = "my_lists">
+    <ul class="list-group">
+        {% for hero in object_list %}
+        <li class="list-group-item">{{ hero.name }} - {{ hero.description }} -
+            <a href="{{ hero.pk }}" button type="button" class="btn btn-info">{{ hero.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
 
-<ul>
-    {% for hero in object_list %}
-    <li>{{ hero.name }} - {{ hero.description }} -
-        <a href="{{ hero.pk }}">{{ hero.name }}</a>
-    </li>
-    {% endfor %}
-</ul>
-
-<p>
-    <a href="/admin/" class="btn btn-success m-5">Modify Database with Admin Views</a>
-    <a href="/hero/add" class="btn btn-success m-5">Add New Hero</a>
-</p>
-
+    <p>
+        <a href="/admin/" class="btn btn-success m-5">Modify Database with Admin Views</a>
+        <a href="/hero/add" class="btn btn-success m-5">Add New Hero</a>
+    </p>
+</div>
 
 {% endblock content %}
