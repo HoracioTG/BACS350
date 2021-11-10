@@ -9,6 +9,19 @@
 
 
 <p id = "link"><a href="/hero/" button type="button" class="btn btn-danger">List of My Superheroes</button></a></p>
+<br> {% if user.is_authenticated %}
+<p> Hi {{ user.username }}!</p>
+<p><a href="{% url 'logout' %}">Log Out</a></p>
+{% else %}
+
+<p>You are not logged in</p>
+<a href="{% url 'login' %}">Log In</a>
+<br>
+<a href="{% url 'signup' %}">Sign Up</a>{% endif %}
+<br><br>
+<a class="btn btn-danger" href="/hero/">List of Superheroes</a>
+<br><br>
+<a class="btn btn-danger" href="/hero/add">Add Hero</a> 
 
 
 {% endblock content %}
